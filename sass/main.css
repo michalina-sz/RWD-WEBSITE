@@ -212,6 +212,60 @@ section.achievements .achievements-box .achievement .achievement-text p {
   font-size: 1.2rem;
 }
 
+section.offers {
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.418), rgba(113, 53, 141, 0.5607843137), rgba(191, 57, 48, 0.7058823529));
+}
+section.offers .section-heading {
+  color: #fff;
+}
+section.offers .wrapper {
+  padding: 30px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+section.offers .underline {
+  background-color: #fff;
+}
+section.offers .offers__option {
+  margin: 10px 0;
+  box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.19);
+  background-color: #fff;
+  overflow: hidden;
+}
+section.offers .offers__option-img {
+  width: 100%;
+}
+section.offers .offers__option-info {
+  padding: 20px;
+  z-index: 10;
+  background-color: #fff;
+}
+section.offers .offers__option-heading {
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 300;
+}
+section.offers .offers__option-text {
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #2e2e2e;
+}
+section.offers .offers__option-btn {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  color: #fff;
+  background-color: #191970;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+section.offers .offers__option-btn::before {
+  background-color: #3C486B;
+}
+
 section.contact {
   background-image: linear-gradient(45deg, rgba(25, 25, 112, 0.862745098), rgba(42, 10, 184, 0.75));
   color: #fff;
@@ -293,6 +347,34 @@ section.contact .contact-box .column .map iframe {
   text-align: center;
 }
 
+@media (min-width: 576px) {
+  section.offers .offers__option {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+  }
+  section.offers .offers__option-img {
+    width: 40%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section.offers .offers__option-img--right {
+    order: 1;
+  }
+  section.offers .offers__option-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  section.offers .offers__option-heading {
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+  section.offers .offers__option-btn {
+    padding: 10px;
+  }
+}
 @media (min-width: 768px) {
   header {
     background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.418), rgba(113, 53, 141, 0.5607843137), rgba(191, 57, 48, 0.7058823529)), url("/img/header-img-big.png");
@@ -361,41 +443,5 @@ section.contact .contact-box .column .map iframe {
   }
   nav.nav {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-@keyframes bounce-in-bottom {
-  0% {
-    transform: translateY(500px);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-  38% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  55% {
-    transform: translateY(65px);
-    animation-timing-function: ease-in;
-  }
-  72% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-  }
-  81% {
-    transform: translateY(28px);
-    animation-timing-function: ease-in;
-  }
-  90% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
-  }
-  95% {
-    transform: translateY(8px);
-    animation-timing-function: ease-in;
-  }
-  100% {
-    transform: translateY(0);
-    animation-timing-function: ease-out;
   }
 }
