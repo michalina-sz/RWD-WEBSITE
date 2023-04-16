@@ -10,29 +10,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 
+
     <title>RWD Website</title>
     <link rel="stylesheet" href="./sass/main.css">
+
 </head>
 
 <body>
     <nav class="nav">
         <div class="nav-items">
             <a href="#" class="nav-item"><i class="fa-solid fa-house"></i></a>
-            <a href="#achievements" class="nav-item">Osiągnięcia</a>
+            <a href="#about" class="nav-item">O nas</a>
             <a href="#portfolio" class="nav-item">Oferty</a>
             <a href="#contact" class="nav-item">Kontakt</a>
         </div>
         <div class="logo">
             <p><i class="fa-solid fa-truck-fast"></i> RWD WEBSITE</p>
         </div>
-        <button class="burger-btn"><i class="fa-solid fa-bars"></i></button>
+        <div class="burger-btn-box">
+            <button class="burger-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
         <div class="burger-nav">
-            <div class="logo">
-                <p><i class="fa-solid fa-truck-fast"></i> RWD WEBSITE</p>
-            </div>
+            <button class="burger-btn close"><i class="fa-solid fa-bars-staggered"></i></button>
             <div class="links">
                 <a href="#" class="nav-item"><i class="fa-solid fa-house"></i></a>
-                <a href="#achievements" class="nav-item">Osiągnięcia</a>
+                <a href="#about" class="nav-item">O nas</a>
                 <a href="#portfolio" class="nav-item">Oferty</a>
                 <a href="#contact" class="nav-item">Kontakt</a>
             </div>
@@ -49,7 +51,7 @@
         <!-- <section id="about" class="about"></section> -->
         <!-- 
         <section id="portfolio" class="portfolio"></section> -->
-        <section id="achievements" class="achievements">
+        <section id="about" class="achievements">
             <h2>Usługi Premium</h2>
             <div class="underline"></div>
             <div class="achievements-box">
@@ -78,7 +80,6 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
         <section class="offers section-padding section" id="offers">
             <h2 class="section-heading">Oferty</h2>
@@ -92,7 +93,7 @@
                             <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                 Culpa eligendi dolores ab odit officiis facere enim minus animi itaque voluptatibus.</p>
                             <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+                            <button class="offers__option-btn">Wybierz</button>
                         </div>
                     </div>
                     <div class="offers__option">
@@ -102,7 +103,7 @@
                             <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                 Culpa eligendi dolores ab odit officiis facere enim minus animi itaque voluptatibus.</p>
                             <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+                            <button class="offers__option-btn">Wybierz</button>
                         </div>
                     </div>
                     <div class="offers__option">
@@ -112,7 +113,7 @@
                             <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                                 Culpa eligendi dolores ab odit officiis facere enim minus animi itaque voluptatibus.</p>
                             <p class="offers__option-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                            <button class="offers__option-btn btn-special-animation">Wybierz</button>
+                            <button class="offers__option-btn">Wybierz</button>
                         </div>
                     </div>
                 </div>
@@ -120,37 +121,28 @@
         </section>
         <section id="contact" class="contact">
             <h2>Skontaktuj się z nami</h2>
+            <div class="underline"></div>
             <div class="contact-box">
-                <div class="column">
-                    <div class="contact-element">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nesciunt vel sapiente ratione
-                            eos minima officia assumenda id natus architecto?</p>
-                    </div>
-                    <div class="contact-element">
-                        <button class="btn">HALOOO</button>
-                    </div>
-                    <div class="contact-element map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79969.54263950008!2d22.48137026918411!3d51.218187593705025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472257141e154061%3A0x5528ee7af6e8e95f!2sLublin!5e0!3m2!1spl!2spl!4v1681492149177!5m2!1spl!2spl"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="side side-left">
+                    <div class="map">
+                        <img src="./img/map.png" alt="">
                     </div>
                 </div>
-                <div class="column">
+                <div class="side side-right">
                     <div class="contact-element">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nesciunt vel sapiente ratione
-                            eos minima officia assumenda id natus architecto?</p>
+                        <h3>Siedziba w Nowym Jorku</h3>
+                        <p>00-123 King Street</p>
+                        <p>London</p>
+                        <p>+44 7654 7270</p>
+                        <p>mail@poczta.pl</p>
                     </div>
                     <div class="contact-element">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At minima culpa vero nulla,
-                            deserunt magnam, recusandae aut expedita enim ab fuga eaque officiis earum.</p>
-                    </div>
-                    <div class="contact-element">
-                        <h3>Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium sunt minima,
-                            consectetur sed itaque!</p>
+                        <h3>Główna siedziba</h3>
+                        <p>ul. Długa 12</p>
+                        <p>00-123 Lublin</p>
+                        <p>+48 123 876 098</p>
+                        <p>mail@poczta.pl</p>
                     </div>
                 </div>
             </div>
@@ -160,7 +152,7 @@
         <div class="wrapper">
             <div class="footer__boxes">
                 <div class="footer__box">
-                    <h3 class="footer__box--title"> RWD Website</h3>
+                    <h3 class="footer__box--title"> RWD WEBSITE</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, consequatur!</p>
                     <div class="footer__box--social">
                         <a href="#" class="footer__box--link"><i class="fa-brands fa-twitter"></i></a>
@@ -189,7 +181,7 @@
             </div>
         </div>
         <hr>
-        <p class="footer__bottom--text">&copy; <span class="footer__year">2023</span> Tropical Paradise</p>
+        <p class="footer__bottom--text">&copy; <span class="footer__year">2023</span> RWD Website</p>
     </footer>
     <script src="script.js"></script>
 </body>

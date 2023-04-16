@@ -1,9 +1,6 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Twój kod JavaScript
-//   });
-
 const burgerNav = document.querySelector('.burger-nav');
 const burgerBtn = document.querySelector('.burger-btn');
+const burgerClose = document.querySelector('.burger-btn.close');
 const links = document.querySelectorAll('links.nav-item');
 
 function toggleBurgerNav() {
@@ -14,12 +11,10 @@ function toggleBurgerNav() {
 			burgerNav.classList.remove('active');
 		});
 	});
+
+	burgerClose.addEventListener('click', () => {
+		burgerNav.classList.remove('active');
+	});
 }
 
 burgerBtn.addEventListener('click', toggleBurgerNav);
-
-links.forEach((link) => {
-	link.addEventListener('click', () => {
-		burgerNav.classList.remove('active');
-	});
-});
