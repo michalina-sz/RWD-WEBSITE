@@ -152,7 +152,7 @@ header {
 	align-items: center;
 	flex-direction: column;
 	padding: 2em;
-	background-image: url('/img/header-img-small.png');
+	background-image: url('../img/header-img-small.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -457,7 +457,7 @@ section.contact {
 @media (min-width: 768px) {
 	header {
 		background-image: $blue-purple-orange-gradient,
-			url('/img/header-img-big.png');
+			url('../img/header-img-big.png');
 	}
 	section.contact {
 		.contact-box {
