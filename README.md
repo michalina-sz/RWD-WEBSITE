@@ -1,5 +1,7 @@
 # RWD-WEBSITE
 
+## App created for an university project
+
 ## https://michalina-sz.github.io/RWD-WEBSITE/
 
 
