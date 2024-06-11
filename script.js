@@ -1,20 +1,12 @@
-const burgerNav = document.querySelector('.burger-nav');
-const burgerBtn = document.querySelector('.burger-btn');
-const burgerClose = document.querySelector('.burger-btn.close');
-const links = document.querySelectorAll('links.nav-item');
+const navBtn = document.querySelector('.nav-toggle');
+const mobileNav = document.querySelector('.mobile-nav');
+const mobileNavLink = document.querySelectorAll('.mobile-nav-item');
 
-function toggleBurgerNav() {
-	burgerNav.classList.toggle('active');
-
-	links.forEach((link) => {
-		link.addEventListener('click', () => {
-			burgerNav.classList.remove('active');
-		});
-	});
-
-	burgerClose.addEventListener('click', () => {
-		burgerNav.classList.remove('active');
-	});
+function toggleNavbar() {
+	mobileNav.classList.toggle('active');
 }
+navBtn.addEventListener('click', toggleNavbar);
 
-burgerBtn.addEventListener('click', toggleBurgerNav);
+mobileNavLink.forEach((link) => {
+	link.addEventListener('click', toggleNavbar);
+});
